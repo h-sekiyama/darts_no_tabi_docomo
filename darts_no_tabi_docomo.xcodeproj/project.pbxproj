@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E423D8C2429CEA7007DC33A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423D8B2429CEA7007DC33A /* AppDelegate.swift */; };
+		3E423D8E2429CEA7007DC33A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423D8D2429CEA7007DC33A /* SceneDelegate.swift */; };
+		3E423D902429CEA7007DC33A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423D8F2429CEA7007DC33A /* ViewController.swift */; };
+		3E423D932429CEA7007DC33A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E423D912429CEA7007DC33A /* Main.storyboard */; };
+		3E423D952429CEA9007DC33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E423D942429CEA9007DC33A /* Assets.xcassets */; };
+		3E423D982429CEA9007DC33A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E423D962429CEA9007DC33A /* LaunchScreen.storyboard */; };
+		3E423DA32429CEAA007DC33A /* darts_no_tabi_docomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423DA22429CEAA007DC33A /* darts_no_tabi_docomoTests.swift */; };
+		3E423DAE2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423DAD2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E423D9F2429CEAA007DC33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E423D802429CEA7007DC33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E423D872429CEA7007DC33A;
+			remoteInfo = darts_no_tabi_docomo;
+		};
+		3E423DAA2429CEAA007DC33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E423D802429CEA7007DC33A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E423D872429CEA7007DC33A;
+			remoteInfo = darts_no_tabi_docomo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E423D882429CEA7007DC33A /* darts_no_tabi_docomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = darts_no_tabi_docomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E423D8B2429CEA7007DC33A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E423D8D2429CEA7007DC33A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E423D8F2429CEA7007DC33A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E423D922429CEA7007DC33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E423D942429CEA9007DC33A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E423D972429CEA9007DC33A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E423D992429CEA9007DC33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E423D9E2429CEAA007DC33A /* darts_no_tabi_docomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = darts_no_tabi_docomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E423DA22429CEAA007DC33A /* darts_no_tabi_docomoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darts_no_tabi_docomoTests.swift; sourceTree = "<group>"; };
+		3E423DA42429CEAA007DC33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E423DA92429CEAA007DC33A /* darts_no_tabi_docomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = darts_no_tabi_docomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E423DAD2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darts_no_tabi_docomoUITests.swift; sourceTree = "<group>"; };
+		3E423DAF2429CEAA007DC33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E423D852429CEA7007DC33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E423D9B2429CEAA007DC33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E423DA62429CEAA007DC33A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E423D7F2429CEA7007DC33A = {
+			isa = PBXGroup;
+			children = (
+				3E423D8A2429CEA7007DC33A /* darts_no_tabi_docomo */,
+				3E423DA12429CEAA007DC33A /* darts_no_tabi_docomoTests */,
+				3E423DAC2429CEAA007DC33A /* darts_no_tabi_docomoUITests */,
+				3E423D892429CEA7007DC33A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E423D892429CEA7007DC33A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E423D882429CEA7007DC33A /* darts_no_tabi_docomo.app */,
+				3E423D9E2429CEAA007DC33A /* darts_no_tabi_docomoTests.xctest */,
+				3E423DA92429CEAA007DC33A /* darts_no_tabi_docomoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E423D8A2429CEA7007DC33A /* darts_no_tabi_docomo */ = {
+			isa = PBXGroup;
+			children = (
+				3E423D8B2429CEA7007DC33A /* AppDelegate.swift */,
+				3E423D8D2429CEA7007DC33A /* SceneDelegate.swift */,
+				3E423D8F2429CEA7007DC33A /* ViewController.swift */,
+				3E423D912429CEA7007DC33A /* Main.storyboard */,
+				3E423D942429CEA9007DC33A /* Assets.xcassets */,
+				3E423D962429CEA9007DC33A /* LaunchScreen.storyboard */,
+				3E423D992429CEA9007DC33A /* Info.plist */,
+			);
+			path = darts_no_tabi_docomo;
+			sourceTree = "<group>";
+		};
+		3E423DA12429CEAA007DC33A /* darts_no_tabi_docomoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E423DA22429CEAA007DC33A /* darts_no_tabi_docomoTests.swift */,
+				3E423DA42429CEAA007DC33A /* Info.plist */,
+			);
+			path = darts_no_tabi_docomoTests;
+			sourceTree = "<group>";
+		};
+		3E423DAC2429CEAA007DC33A /* darts_no_tabi_docomoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E423DAD2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift */,
+				3E423DAF2429CEAA007DC33A /* Info.plist */,
+			);
+			path = darts_no_tabi_docomoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E423D872429CEA7007DC33A /* darts_no_tabi_docomo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E423DB22429CEAA007DC33A /* Build configuration list for PBXNativeTarget "darts_no_tabi_docomo" */;
+			buildPhases = (
+				3E423D842429CEA7007DC33A /* Sources */,
+				3E423D852429CEA7007DC33A /* Frameworks */,
+				3E423D862429CEA7007DC33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = darts_no_tabi_docomo;
+			productName = darts_no_tabi_docomo;
+			productReference = 3E423D882429CEA7007DC33A /* darts_no_tabi_docomo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E423D9D2429CEAA007DC33A /* darts_no_tabi_docomoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E423DB52429CEAA007DC33A /* Build configuration list for PBXNativeTarget "darts_no_tabi_docomoTests" */;
+			buildPhases = (
+				3E423D9A2429CEAA007DC33A /* Sources */,
+				3E423D9B2429CEAA007DC33A /* Frameworks */,
+				3E423D9C2429CEAA007DC33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E423DA02429CEAA007DC33A /* PBXTargetDependency */,
+			);
+			name = darts_no_tabi_docomoTests;
+			productName = darts_no_tabi_docomoTests;
+			productReference = 3E423D9E2429CEAA007DC33A /* darts_no_tabi_docomoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E423DA82429CEAA007DC33A /* darts_no_tabi_docomoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E423DB82429CEAA007DC33A /* Build configuration list for PBXNativeTarget "darts_no_tabi_docomoUITests" */;
+			buildPhases = (
+				3E423DA52429CEAA007DC33A /* Sources */,
+				3E423DA62429CEAA007DC33A /* Frameworks */,
+				3E423DA72429CEAA007DC33A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E423DAB2429CEAA007DC33A /* PBXTargetDependency */,
+			);
+			name = darts_no_tabi_docomoUITests;
+			productName = darts_no_tabi_docomoUITests;
+			productReference = 3E423DA92429CEAA007DC33A /* darts_no_tabi_docomoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E423D802429CEA7007DC33A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "hidemitsu sekiyama";
+				TargetAttributes = {
+					3E423D872429CEA7007DC33A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					3E423D9D2429CEAA007DC33A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3E423D872429CEA7007DC33A;
+					};
+					3E423DA82429CEAA007DC33A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3E423D872429CEA7007DC33A;
+					};
+				};
+			};
+			buildConfigurationList = 3E423D832429CEA7007DC33A /* Build configuration list for PBXProject "darts_no_tabi_docomo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E423D7F2429CEA7007DC33A;
+			productRefGroup = 3E423D892429CEA7007DC33A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E423D872429CEA7007DC33A /* darts_no_tabi_docomo */,
+				3E423D9D2429CEAA007DC33A /* darts_no_tabi_docomoTests */,
+				3E423DA82429CEAA007DC33A /* darts_no_tabi_docomoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E423D862429CEA7007DC33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E423D982429CEA9007DC33A /* LaunchScreen.storyboard in Resources */,
+				3E423D952429CEA9007DC33A /* Assets.xcassets in Resources */,
+				3E423D932429CEA7007DC33A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E423D9C2429CEAA007DC33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E423DA72429CEAA007DC33A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E423D842429CEA7007DC33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E423D902429CEA7007DC33A /* ViewController.swift in Sources */,
+				3E423D8C2429CEA7007DC33A /* AppDelegate.swift in Sources */,
+				3E423D8E2429CEA7007DC33A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E423D9A2429CEAA007DC33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E423DA32429CEAA007DC33A /* darts_no_tabi_docomoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E423DA52429CEAA007DC33A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E423DAE2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E423DA02429CEAA007DC33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E423D872429CEA7007DC33A /* darts_no_tabi_docomo */;
+			targetProxy = 3E423D9F2429CEAA007DC33A /* PBXContainerItemProxy */;
+		};
+		3E423DAB2429CEAA007DC33A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E423D872429CEA7007DC33A /* darts_no_tabi_docomo */;
+			targetProxy = 3E423DAA2429CEAA007DC33A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E423D912429CEA7007DC33A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E423D922429CEA7007DC33A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E423D962429CEA9007DC33A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E423D972429CEA9007DC33A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E423DB02429CEAA007DC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E423DB12429CEAA007DC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E423DB32429CEAA007DC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42UU3JKF9R;
+				INFOPLIST_FILE = darts_no_tabi_docomo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sekky-company.darts-no-tabi-docomo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E423DB42429CEAA007DC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42UU3JKF9R;
+				INFOPLIST_FILE = darts_no_tabi_docomo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sekky-company.darts-no-tabi-docomo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E423DB62429CEAA007DC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42UU3JKF9R;
+				INFOPLIST_FILE = darts_no_tabi_docomoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sekky-company.darts-no-tabi-docomoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/darts_no_tabi_docomo.app/darts_no_tabi_docomo";
+			};
+			name = Debug;
+		};
+		3E423DB72429CEAA007DC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42UU3JKF9R;
+				INFOPLIST_FILE = darts_no_tabi_docomoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sekky-company.darts-no-tabi-docomoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/darts_no_tabi_docomo.app/darts_no_tabi_docomo";
+			};
+			name = Release;
+		};
+		3E423DB92429CEAA007DC33A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42UU3JKF9R;
+				INFOPLIST_FILE = darts_no_tabi_docomoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sekky-company.darts-no-tabi-docomoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = darts_no_tabi_docomo;
+			};
+			name = Debug;
+		};
+		3E423DBA2429CEAA007DC33A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42UU3JKF9R;
+				INFOPLIST_FILE = darts_no_tabi_docomoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sekky-company.darts-no-tabi-docomoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = darts_no_tabi_docomo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E423D832429CEA7007DC33A /* Build configuration list for PBXProject "darts_no_tabi_docomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E423DB02429CEAA007DC33A /* Debug */,
+				3E423DB12429CEAA007DC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E423DB22429CEAA007DC33A /* Build configuration list for PBXNativeTarget "darts_no_tabi_docomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E423DB32429CEAA007DC33A /* Debug */,
+				3E423DB42429CEAA007DC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E423DB52429CEAA007DC33A /* Build configuration list for PBXNativeTarget "darts_no_tabi_docomoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E423DB62429CEAA007DC33A /* Debug */,
+				3E423DB72429CEAA007DC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E423DB82429CEAA007DC33A /* Build configuration list for PBXNativeTarget "darts_no_tabi_docomoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E423DB92429CEAA007DC33A /* Debug */,
+				3E423DBA2429CEAA007DC33A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E423D802429CEA7007DC33A /* Project object */;
+}
