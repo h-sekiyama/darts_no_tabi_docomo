@@ -4,7 +4,9 @@
 <dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>comgooglemaps</string>
+        <string>comgooglemapsurl</string>
+        <string>comgooglemaps</string>
+        <string>comgooglemaps-x-callback</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
