@@ -1,16 +1,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var name: String?
 
     @IBOutlet weak var stationName: UILabel!
+    @IBAction func dartsButton(_ sender: Any) {
+        stationName.text = name
+        getStationName()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var name: String? {
-            didSet {
-                stationName.text = getStationName()
-            }
-        }
+        getStationName()
     }
 
     private func getStationName() {
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
                 let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: Any]
                 let resultSet = json["ResultSet"] as! [String: Any]
                 let point = resultSet["Point"] as! [String: Any]
-                let stationData = point["Station"] as! [String: Any]
-                name = stationData["Name"] as! String
+                let stationData = point["Station"] as! [String: String]
+                self.name = stationData["Name"]
             } catch {
                 print(error)
             }
