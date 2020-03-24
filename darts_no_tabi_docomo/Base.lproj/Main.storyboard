@@ -44,8 +44,16 @@
                                     <action selector="dartsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8S-Nt-1pO"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Angeno" translatesAutoresizingMaskIntoConstraints="NO" id="Hx1-VY-aDb">
-                                <rect key="frame" x="87" y="376" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-US-XMq">
+                                <rect key="frame" x="137" y="324" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Googleマップを開く"/>
+                                <connections>
+                                    <action selector="googleMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wnC-jz-Cp0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="oPY-C5-IHZ">
+                                <rect key="frame" x="87" y="397" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -62,6 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Angeno" width="708" height="504"/>
+        <image name="Image" width="354" height="252"/>
     </resources>
 </document>

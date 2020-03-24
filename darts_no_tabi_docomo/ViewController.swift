@@ -3,11 +3,25 @@ import UIKit
 class ViewController: UIViewController {
     
     var name: String?
+    var latitude: String?
+    var longitude:String?
 
     @IBOutlet weak var stationName: UILabel!
     @IBAction func dartsButton(_ sender: Any) {
         stationName.text = name
         getStationName()
+    }
+    @IBAction func googleMapButton(_ sender: Any) {
+        let urlString: String!
+        if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
+            urlString = "comgooglemaps://?daddr=\(latitude),\(longitude)&directionsmode=walking&zoom=14"
+            }
+        else {
+            urlString = "http://maps.apple.com/?daddr=\(latitude),\(longitude)&dirflg=w"
+            }
+        if let url = URL(string: urlString) {
+            UIApplication.shared.open(url)
+            }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +39,10 @@ class ViewController: UIViewController {
                 let point = resultSet["Point"] as! [String: Any]
                 let stationData = point["Station"] as! [String: String]
                 self.name = stationData["Name"]
+                
+                let getPoint = point["GeoPoint"] as! [String: String]
+                self.latitude = getPoint["lati"]
+                self.longitude = getPoint["longi"]
             } catch {
                 print(error)
             }
