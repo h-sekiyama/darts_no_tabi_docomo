@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 //        longitude = "139.77235727788792"
         let urlString: String!
         if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
-            urlString = "comgooglemaps://?daddr=\(latitude),\(longitude)&directionsmode=walking&zoom=14"
+            urlString = "comgooglemaps://?q=\(latitude),\(longitude)&directionsmode=walking&zoom=24"
             }
         else {
             urlString = "http://maps.apple.com/?daddr=\(latitude),\(longitude)&dirflg=w"
