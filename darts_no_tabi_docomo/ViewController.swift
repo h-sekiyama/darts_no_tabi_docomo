@@ -8,7 +8,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var stationName: UILabel!
     @IBAction func dartsButton(_ sender: Any) {
-        stationName.text = name
         getStationName()
     }
     @IBAction func googleMapButton(_ sender: Any) {
@@ -27,7 +26,12 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        getStationName()
+    }
+    
+    private func updateStation() {
+        DispatchQueue.main.async {
+            self.stationName.text = self.name
+        }
     }
 
     private func getStationName() {
@@ -43,8 +47,9 @@ class ViewController: UIViewController {
                 self.name = stationData["Name"]
                 
                 let getPoint = point["GeoPoint"] as! [String: String]
-                self.latitude = getPoint["lati"]!
-                self.longitude = getPoint["longi"]!
+                self.latitude = getPoint["lati_d"]!
+                self.longitude = getPoint["longi_d"]!
+                self.updateStation()
             } catch {
                 print(error)
             }
