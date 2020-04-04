@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         getStationName()
     }
     @IBAction func googleMapButton(_ sender: Any) {
-//        latitude = "35.692096424393867"
-//        longitude = "139.77235727788792"
+        latitude = String(Double(latitude)! + 0.0032506)
+        longitude = String(Double(longitude)! - 0.0032088)
         let urlString: String!
         if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
             urlString = "comgooglemaps://?q=\(latitude),\(longitude)&directionsmode=walking&zoom=24"
