@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     var latitude: String = ""
     var longitude:String = ""
     
+    @IBOutlet weak var angeno: UIImageView!
     @IBOutlet weak var textField: UITextField!
     
     var pickerView: UIPickerView = UIPickerView()
@@ -35,6 +36,11 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let data = try! Data(contentsOf: URL(string: "https://i.gyazo.com/216d896e385ee9039362d11194a493b4.gif")!)
+        angeno.animateGIF(data: data) {
+            print("再生完了")
+        }
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pattern.png")!)
         

@@ -16,6 +16,8 @@
 		3E423DA32429CEAA007DC33A /* darts_no_tabi_docomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423DA22429CEAA007DC33A /* darts_no_tabi_docomoTests.swift */; };
 		3E423DAE2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423DAD2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift */; };
 		3E423DBC2429D95D007DC33A /* StationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E423DBB2429D95D007DC33A /* StationEntity.swift */; };
+		3E73B9C62438CFF100D02427 /* UIImage+AnimatedGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E73B9C52438CFF100D02427 /* UIImage+AnimatedGIF.swift */; };
+		3E73B9C82438D00C00D02427 /* UIImageView+AnimatedGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E73B9C72438D00C00D02427 /* UIImageView+AnimatedGIF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3E423DAD2429CEAA007DC33A /* darts_no_tabi_docomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darts_no_tabi_docomoUITests.swift; sourceTree = "<group>"; };
 		3E423DAF2429CEAA007DC33A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E423DBB2429D95D007DC33A /* StationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationEntity.swift; sourceTree = "<group>"; };
+		3E73B9C52438CFF100D02427 /* UIImage+AnimatedGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AnimatedGIF.swift"; sourceTree = "<group>"; };
+		3E73B9C72438D00C00D02427 /* UIImageView+AnimatedGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AnimatedGIF.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				3E423D962429CEA9007DC33A /* LaunchScreen.storyboard */,
 				3E423D992429CEA9007DC33A /* Info.plist */,
 				3E423DBB2429D95D007DC33A /* StationEntity.swift */,
+				3E73B9C52438CFF100D02427 /* UIImage+AnimatedGIF.swift */,
+				3E73B9C72438D00C00D02427 /* UIImageView+AnimatedGIF.swift */,
 			);
 			path = darts_no_tabi_docomo;
 			sourceTree = "<group>";
@@ -264,8 +270,10 @@
 			files = (
 				3E423D902429CEA7007DC33A /* ViewController.swift in Sources */,
 				3E423DBC2429D95D007DC33A /* StationEntity.swift in Sources */,
+				3E73B9C82438D00C00D02427 /* UIImageView+AnimatedGIF.swift in Sources */,
 				3E423D8C2429CEA7007DC33A /* AppDelegate.swift in Sources */,
 				3E423D8E2429CEA7007DC33A /* SceneDelegate.swift in Sources */,
+				3E73B9C62438CFF100D02427 /* UIImage+AnimatedGIF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

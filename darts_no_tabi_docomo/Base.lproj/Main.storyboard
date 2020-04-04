@@ -15,38 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angeno" translatesAutoresizingMaskIntoConstraints="NO" id="TxT-sZ-XIh">
-                                <rect key="frame" x="0.0" y="512" width="414" height="460.5"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="？？？？？？？？？" textAlignment="natural" lineBreakMode="middleTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEy-Hu-eym">
-                                <rect key="frame" x="61.5" y="192.5" width="291" height="39"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-fI-FWb">
+                                <rect key="frame" x="0.0" y="571" width="414" height="347"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="qEd-74-d3K"/>
+                                    <constraint firstAttribute="width" secondItem="mbs-fI-FWb" secondAttribute="height" multiplier="414:347" id="uHU-7z-dPH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.40414434671401978" green="0.097677133977413177" blue="0.08119509369134903" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEy-Hu-eym">
+                                <rect key="frame" x="30" y="262.5" width="354" height="37"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="？？？？？？？？？">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="37" name="HiraMaruProN-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-US-XMq">
-                                <rect key="frame" x="70" y="439" width="274" height="65"/>
+                                <rect key="frame" x="55" y="399.5" width="304" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64.999999999999972" id="G9T-v6-pmt"/>
+                                    <constraint firstAttribute="height" constant="80" id="Uev-EN-evD"/>
+                                    <constraint firstAttribute="width" constant="304" id="zUI-a5-GuJ"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Googleマップを開く" image="map"/>
                                 <connections>
                                     <action selector="googleMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wnC-jz-Cp0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-OJ-mWR">
-                                <rect key="frame" x="32" y="758" width="350" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Wgw-OJ-mWR" secondAttribute="height" multiplier="117:28" id="hgX-1s-O6P"/>
-                                </constraints>
-                                <state key="normal" title="ダーツを投げる" image="button"/>
-                                <connections>
-                                    <action selector="dartsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8S-Nt-1pO"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="東京都" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-ih-hAe" userLabel="県選択">
@@ -56,33 +54,48 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ikisaki" translatesAutoresizingMaskIntoConstraints="NO" id="7bP-4k-hA1">
-                                <rect key="frame" x="59.5" y="100" width="295.5" height="52.5"/>
+                                <rect key="frame" x="58" y="140" width="298" height="52.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="295.5" id="Pe8-si-gD0"/>
-                                    <constraint firstAttribute="height" constant="52.5" id="iHi-lH-Hle"/>
+                                    <constraint firstAttribute="width" secondItem="7bP-4k-hA1" secondAttribute="height" multiplier="295:52" id="coK-uy-0du"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-OJ-mWR">
+                                <rect key="frame" x="20" y="731" width="374" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="hqJ-7o-eRK"/>
+                                    <constraint firstAttribute="height" constant="117" id="xUU-4f-0tu"/>
+                                </constraints>
+                                <state key="normal" title="ダーツを投げる" image="button"/>
+                                <connections>
+                                    <action selector="dartsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8S-Nt-1pO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="7bP-4k-hA1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07I-Gv-Oh7"/>
-                            <constraint firstItem="gfb-US-XMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="8cj-GD-S8E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TxT-sZ-XIh" secondAttribute="trailing" id="LMD-0K-9cj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgw-OJ-mWR" secondAttribute="bottom" constant="20" id="PPc-J8-Irv"/>
-                            <constraint firstItem="7bP-4k-hA1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="QEI-uZ-JJQ"/>
-                            <constraint firstItem="TxT-sZ-XIh" firstAttribute="top" secondItem="gfb-US-XMq" secondAttribute="bottom" constant="8" id="Wgx-my-xqn"/>
-                            <constraint firstItem="jEy-Hu-eym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aTy-RE-K4i"/>
-                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ar3-oy-UlY"/>
-                            <constraint firstItem="jEy-Hu-eym" firstAttribute="top" secondItem="7bP-4k-hA1" secondAttribute="bottom" constant="40" id="ccH-u2-UJI"/>
-                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="centerX" secondItem="TxT-sZ-XIh" secondAttribute="centerX" id="s8f-cv-o7G"/>
-                            <constraint firstItem="gfb-US-XMq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jEy-Hu-eym" secondAttribute="bottom" constant="50" id="sEo-cA-rcX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TxT-sZ-XIh" secondAttribute="bottom" constant="-110.5" id="ttv-eH-hvZ"/>
-                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="centerX" secondItem="gfb-US-XMq" secondAttribute="centerX" id="v63-5c-sa7"/>
-                            <constraint firstItem="TxT-sZ-XIh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yi5-HL-nLz"/>
+                            <constraint firstItem="7bP-4k-hA1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7n8-7j-gAE"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gfb-US-XMq" secondAttribute="trailing" constant="20" id="90A-Nr-n2H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jEy-Hu-eym" secondAttribute="trailing" constant="30" id="9HT-na-l41"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Him-Xh-Gv3"/>
+                            <constraint firstItem="jEy-Hu-eym" firstAttribute="top" secondItem="7bP-4k-hA1" secondAttribute="bottom" constant="70" id="MY7-MV-q4r"/>
+                            <constraint firstItem="7bP-4k-hA1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="140" id="QEI-uZ-JJQ"/>
+                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="S1y-ml-lJ2"/>
+                            <constraint firstItem="jEy-Hu-eym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fU0-sK-qvG"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="top" secondItem="jEy-Hu-eym" secondAttribute="bottom" constant="100" id="gOx-jA-rCx"/>
+                            <constraint firstItem="mbs-fI-FWb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hYU-Dn-8w1"/>
+                            <constraint firstItem="jEy-Hu-eym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="i8H-BI-eM4"/>
+                            <constraint firstAttribute="trailing" secondItem="Wgw-OJ-mWR" secondAttribute="trailing" constant="20" id="kRE-NS-YAG"/>
+                            <constraint firstAttribute="bottom" secondItem="mbs-fI-FWb" secondAttribute="bottom" constant="-20" id="tSB-bu-nL3"/>
+                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tVJ-kl-pqH"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="te3-yz-6mJ"/>
+                            <constraint firstItem="mbs-fI-FWb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w2Q-IW-Qbt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgw-OJ-mWR" secondAttribute="bottom" constant="14" id="x9c-JE-xpD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="angeno" destination="mbs-fI-FWb" id="yCK-Gs-FyA"/>
                         <outlet property="stationName" destination="jEy-Hu-eym" id="dpJ-HD-QRV"/>
                         <outlet property="textField" destination="1CA-ih-hAe" id="gt5-hl-UI3"/>
                     </connections>
@@ -93,7 +106,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="angeno" width="621" height="460.5"/>
         <image name="button" width="576" height="167"/>
         <image name="ikisaki" width="295.5" height="52.5"/>
         <image name="map" width="379.5" height="103.5"/>
