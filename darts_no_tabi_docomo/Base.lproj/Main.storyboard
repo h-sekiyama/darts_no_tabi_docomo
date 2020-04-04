@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,69 +15,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="？？？？？？？？？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEy-Hu-eym">
-                                <rect key="frame" x="80" y="170" width="156" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angeno" translatesAutoresizingMaskIntoConstraints="NO" id="TxT-sZ-XIh">
+                                <rect key="frame" x="0.0" y="512" width="414" height="460.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="？？？？？？？？？" textAlignment="natural" lineBreakMode="middleTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEy-Hu-eym">
+                                <rect key="frame" x="61.5" y="192.5" width="291" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="qEd-74-d3K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.40414434671401978" green="0.097677133977413177" blue="0.08119509369134903" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lES-0l-JPI">
-                                <rect key="frame" x="20" y="170" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="駅に行くにゃ！！！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xf-1b-x2g">
-                                <rect key="frame" x="244" y="170" width="156" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-OJ-mWR">
-                                <rect key="frame" x="153" y="272" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ダーツを投げる"/>
-                                <connections>
-                                    <action selector="dartsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8S-Nt-1pO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-US-XMq">
-                                <rect key="frame" x="137" y="324" width="141" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Googleマップを開く"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-US-XMq">
+                                <rect key="frame" x="70" y="439" width="274" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64.999999999999972" id="G9T-v6-pmt"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Googleマップを開く" image="map"/>
                                 <connections>
                                     <action selector="googleMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wnC-jz-Cp0"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="oPY-C5-IHZ">
-                                <rect key="frame" x="87" y="397" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="東京都" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-ih-hAe">
-                                <rect key="frame" x="159" y="104" width="97" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-OJ-mWR">
+                                <rect key="frame" x="32" y="758" width="350" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wgw-OJ-mWR" secondAttribute="height" multiplier="117:28" id="hgX-1s-O6P"/>
+                                </constraints>
+                                <state key="normal" title="ダーツを投げる" image="button"/>
+                                <connections>
+                                    <action selector="dartsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8S-Nt-1pO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="東京都" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-ih-hAe" userLabel="県選択">
+                                <rect key="frame" x="170.56756187676001" y="55" width="71" height="33.999999999999972"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="にゃ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ss-IL-f7y">
-                                <rect key="frame" x="264" y="109" width="52" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日行く県は" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmZ-fn-tW0">
-                                <rect key="frame" x="47" y="111" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ikisaki" translatesAutoresizingMaskIntoConstraints="NO" id="7bP-4k-hA1">
+                                <rect key="frame" x="59.5" y="100" width="295.5" height="52.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295.5" id="Pe8-si-gD0"/>
+                                    <constraint firstAttribute="height" constant="52.5" id="iHi-lH-Hle"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7bP-4k-hA1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07I-Gv-Oh7"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="8cj-GD-S8E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TxT-sZ-XIh" secondAttribute="trailing" id="LMD-0K-9cj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgw-OJ-mWR" secondAttribute="bottom" constant="20" id="PPc-J8-Irv"/>
+                            <constraint firstItem="7bP-4k-hA1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="QEI-uZ-JJQ"/>
+                            <constraint firstItem="TxT-sZ-XIh" firstAttribute="top" secondItem="gfb-US-XMq" secondAttribute="bottom" constant="8" id="Wgx-my-xqn"/>
+                            <constraint firstItem="jEy-Hu-eym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aTy-RE-K4i"/>
+                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ar3-oy-UlY"/>
+                            <constraint firstItem="jEy-Hu-eym" firstAttribute="top" secondItem="7bP-4k-hA1" secondAttribute="bottom" constant="40" id="ccH-u2-UJI"/>
+                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="centerX" secondItem="TxT-sZ-XIh" secondAttribute="centerX" id="s8f-cv-o7G"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jEy-Hu-eym" secondAttribute="bottom" constant="50" id="sEo-cA-rcX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TxT-sZ-XIh" secondAttribute="bottom" constant="-110.5" id="ttv-eH-hvZ"/>
+                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="centerX" secondItem="gfb-US-XMq" secondAttribute="centerX" id="v63-5c-sa7"/>
+                            <constraint firstItem="TxT-sZ-XIh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yi5-HL-nLz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -91,6 +93,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="354" height="252"/>
+        <image name="angeno" width="621" height="460.5"/>
+        <image name="button" width="576" height="167"/>
+        <image name="ikisaki" width="295.5" height="52.5"/>
+        <image name="map" width="379.5" height="103.5"/>
     </resources>
 </document>

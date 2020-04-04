@@ -36,6 +36,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pattern.png")!)
+        
         // ピッカー設定
         pickerView.delegate = self
         pickerView.dataSource = self
