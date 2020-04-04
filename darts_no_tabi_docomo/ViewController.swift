@@ -37,11 +37,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let data = try! Data(contentsOf: URL(string: "https://i.gyazo.com/216d896e385ee9039362d11194a493b4.gif")!)
-        angeno.animateGIF(data: data) {
-            print("再生完了")
-        }
+        // アンジュノアニメーションがバックグラウンドから復帰時も呼ばれる様にする
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(self.animationAngeno),
+            name: UIApplication.didBecomeActiveNotification,
+            object: nil
+        )
         
+        // 背景画像のリピート
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pattern.png")!)
         
         // ピッカー設定
@@ -61,6 +66,13 @@ class ViewController: UIViewController {
         
         // デフォルト設定
         pickerView.selectRow(0, inComponent: 0, animated: false)
+    }
+    
+    @objc func animationAngeno() {
+        let data = try! Data(contentsOf: URL(string: "https://i.gyazo.com/216d896e385ee9039362d11194a493b4.gif")!)
+        angeno.animateGIF(data: data) {
+            print("再生完了")
+        }
     }
     
     // 決定ボタン押下
