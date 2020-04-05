@@ -10,7 +10,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     var pickerView: UIPickerView = UIPickerView()
-    let list: [String] = ["東京都", "千葉県", "神奈川県", "埼玉県", "茨城県", "福岡県"] // 東京：13、千葉：12、神奈川：14、埼玉：11、茨城：8、福岡：40
+    
+    // 県リスト
+    var list: [String] = []
+    let prefectureCodeArray = PrefectureCodeArray()
     
     var maxCount: Int = 660
     
@@ -47,6 +50,12 @@ class ViewController: UIViewController {
         // 行き先を選んでない状態ではMapボタンは非アクティブ
         googleMapButtonImage.isEnabled = false
         googleMapButtonImage.imageView?.image = UIImage(named: "map_off")!
+        
+        // 都道府県選択ピッカーに入れる値を取得
+        for (key, _) in prefectureCodeArray.prefectureKeyValue {
+            list.append(key)
+            
+        }
         
         // アンジュノアニメーションがバックグラウンドから復帰時も呼ばれる様にする
         let notificationCenter = NotificationCenter.default
@@ -164,21 +173,10 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     // ドラムロール選択時
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.textField.text = list[row]
-        // 東京：13、千葉：12、神奈川：14、埼玉：11、茨城：8、福岡：40
-        switch list[row] {
-        case "東京都":
-            prefectureCode = "13"
-        case "千葉県":
-            prefectureCode = "12"
-        case "神奈川県":
-            prefectureCode = "14"
-        case "埼玉県":
-            prefectureCode = "11"
-        case "茨城県":
-            prefectureCode = "8"
-        case "福岡県":
-            prefectureCode = "40"
-        default:
+        
+        if let prefectureCodeInt: Int = prefectureCodeArray.prefectureKeyValue[list[row]] {
+            prefectureCode = String(prefectureCodeInt)
+        } else {
             prefectureCode = "13"
         }
         getPrefectureData()
