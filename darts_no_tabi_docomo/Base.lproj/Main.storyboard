@@ -96,6 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="angeno" destination="mbs-fI-FWb" id="yCK-Gs-FyA"/>
+                        <outlet property="googleMapButtonImage" destination="gfb-US-XMq" id="IHD-lr-LvS"/>
                         <outlet property="stationName" destination="jEy-Hu-eym" id="dpJ-HD-QRV"/>
                         <outlet property="textField" destination="1CA-ih-hAe" id="gt5-hl-UI3"/>
                     </connections>

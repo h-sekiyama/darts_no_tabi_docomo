@@ -15,14 +15,21 @@ class ViewController: UIViewController {
     var maxCount: Int = 660
     
     var prefectureCode: String = "13"
+    
+    // APIから受け取った座標が微妙にずれてるので、調整済みかどうか管理する
+    var adjustmentFlag: Bool = false
 
     @IBOutlet weak var stationName: UILabel!
     @IBAction func dartsButton(_ sender: Any) {
         getStationName()
     }
+    @IBOutlet weak var googleMapButtonImage: UIButton!
     @IBAction func googleMapButton(_ sender: Any) {
-        latitude = String(Double(latitude)! + 0.0032506)
-        longitude = String(Double(longitude)! - 0.0032088)
+        if (!adjustmentFlag) {
+            latitude = String(Double(latitude)! + 0.0032506)
+            longitude = String(Double(longitude)! - 0.0032088)
+            adjustmentFlag = true
+        }
         let urlString: String!
         if UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!) {
             urlString = "comgooglemaps://?q=\(latitude),\(longitude)&directionsmode=walking&zoom=24"
@@ -36,6 +43,10 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 行き先を選んでない状態ではMapボタンは非アクティブ
+        googleMapButtonImage.isEnabled = false
+        googleMapButtonImage.imageView?.image = UIImage(named: "map_off")!
         
         // アンジュノアニメーションがバックグラウンドから復帰時も呼ばれる様にする
         let notificationCenter = NotificationCenter.default
@@ -104,6 +115,11 @@ class ViewController: UIViewController {
                 self.latitude = getPoint["lati_d"]!
                 self.longitude = getPoint["longi_d"]!
                 self.updateStation()
+                DispatchQueue.main.async {
+                    self.googleMapButtonImage.isEnabled = true
+                    self.googleMapButtonImage.imageView?.image = UIImage(named: "map")!
+                    self.adjustmentFlag = false
+                }
             } catch {
                 print(error)
             }
