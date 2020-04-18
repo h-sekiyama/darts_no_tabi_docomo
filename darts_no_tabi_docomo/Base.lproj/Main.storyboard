@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,19 +12,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="darts_no_tabi_docomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-fI-FWb">
-                                <rect key="frame" x="0.0" y="571" width="414" height="347"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-fI-FWb">
+                                <rect key="frame" x="0.0" y="409" width="375" height="314"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="mbs-fI-FWb" secondAttribute="height" multiplier="414:347" id="uHU-7z-dPH"/>
+                                    <constraint firstAttribute="width" secondItem="mbs-fI-FWb" secondAttribute="height" multiplier="375:314" id="eXb-7L-8UQ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEy-Hu-eym">
-                                <rect key="frame" x="30" y="262.5" width="354" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEy-Hu-eym">
+                                <rect key="frame" x="30" y="262.5" width="315" height="37"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="？？？？？？？？？">
+                                    <fragment content="？？？？？？？？">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="37" name="HiraMaruProN-W4"/>
@@ -35,18 +35,6 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-US-XMq">
-                                <rect key="frame" x="55" y="399.5" width="304" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Uev-EN-evD"/>
-                                    <constraint firstAttribute="width" constant="304" id="zUI-a5-GuJ"/>
-                                </constraints>
-                                <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Googleマップを開く" image="map"/>
-                                <connections>
-                                    <action selector="googleMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wnC-jz-Cp0"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="東京都" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-ih-hAe" userLabel="県選択">
                                 <rect key="frame" x="170.56756187676001" y="55" width="71" height="33.999999999999972"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,15 +42,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ikisaki" translatesAutoresizingMaskIntoConstraints="NO" id="7bP-4k-hA1">
-                                <rect key="frame" x="58" y="140" width="298" height="52.5"/>
+                                <rect key="frame" x="38.5" y="140" width="298" height="52.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7bP-4k-hA1" secondAttribute="height" multiplier="295:52" id="coK-uy-0du"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-OJ-mWR">
-                                <rect key="frame" x="20" y="731" width="374" height="117"/>
+                                <rect key="frame" x="19" y="536" width="337.5" height="117"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="hqJ-7o-eRK"/>
                                     <constraint firstAttribute="height" constant="117" id="xUU-4f-0tu"/>
                                 </constraints>
                                 <state key="normal" title="ダーツを投げる" image="button"/>
@@ -70,27 +57,36 @@
                                     <action selector="dartsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8S-Nt-1pO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-US-XMq">
+                                <rect key="frame" x="50.5" y="397" width="274" height="68.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gfb-US-XMq" secondAttribute="height" multiplier="335:84" id="SV8-Fk-PDo"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Googleマップを開く" image="map"/>
+                                <connections>
+                                    <action selector="googleMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wnC-jz-Cp0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="7bP-4k-hA1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="07I-Gv-Oh7"/>
                             <constraint firstItem="7bP-4k-hA1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7n8-7j-gAE"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gfb-US-XMq" secondAttribute="trailing" constant="20" id="90A-Nr-n2H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jEy-Hu-eym" secondAttribute="trailing" constant="30" id="9HT-na-l41"/>
                             <constraint firstItem="gfb-US-XMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Him-Xh-Gv3"/>
+                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="LlA-45-oim"/>
                             <constraint firstItem="jEy-Hu-eym" firstAttribute="top" secondItem="7bP-4k-hA1" secondAttribute="bottom" constant="70" id="MY7-MV-q4r"/>
                             <constraint firstItem="7bP-4k-hA1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="140" id="QEI-uZ-JJQ"/>
-                            <constraint firstItem="Wgw-OJ-mWR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="S1y-ml-lJ2"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.730667" id="Qdq-Xf-Xcf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mbs-fI-FWb" secondAttribute="bottom" constant="-56" id="Sf3-nM-l9s"/>
+                            <constraint firstItem="mbs-fI-FWb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="TSl-5v-tja"/>
+                            <constraint firstItem="mbs-fI-FWb" firstAttribute="centerX" secondItem="gfb-US-XMq" secondAttribute="centerX" id="fDY-VA-0eV"/>
                             <constraint firstItem="jEy-Hu-eym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fU0-sK-qvG"/>
-                            <constraint firstItem="gfb-US-XMq" firstAttribute="top" secondItem="jEy-Hu-eym" secondAttribute="bottom" constant="100" id="gOx-jA-rCx"/>
-                            <constraint firstItem="mbs-fI-FWb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hYU-Dn-8w1"/>
                             <constraint firstItem="jEy-Hu-eym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="i8H-BI-eM4"/>
-                            <constraint firstAttribute="trailing" secondItem="Wgw-OJ-mWR" secondAttribute="trailing" constant="20" id="kRE-NS-YAG"/>
-                            <constraint firstAttribute="bottom" secondItem="mbs-fI-FWb" secondAttribute="bottom" constant="-20" id="tSB-bu-nL3"/>
                             <constraint firstItem="Wgw-OJ-mWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tVJ-kl-pqH"/>
-                            <constraint firstItem="gfb-US-XMq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="te3-yz-6mJ"/>
-                            <constraint firstItem="mbs-fI-FWb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w2Q-IW-Qbt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgw-OJ-mWR" secondAttribute="bottom" constant="14" id="x9c-JE-xpD"/>
+                            <constraint firstItem="gfb-US-XMq" firstAttribute="top" secondItem="7bP-4k-hA1" secondAttribute="bottom" constant="204.5" id="xnd-lw-cUe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -103,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-457.97101449275368" y="134.59821428571428"/>
+            <point key="canvasLocation" x="-458.39999999999998" y="134.48275862068968"/>
         </scene>
     </scenes>
     <resources>

@@ -51,8 +51,9 @@ class ViewController: UIViewController {
         googleMapButtonImage.isEnabled = false
         googleMapButtonImage.imageView?.image = UIImage(named: "map_off")!
         
-        // 都道府県選択ピッカーに入れる値を取得
-        for (key, _) in prefectureCodeArray.prefectureKeyValue {
+        // 都道府県選択ピッカーに入れる値を取得（先に都道府県コードでソート）
+        let sortedPrefectureArray = prefectureCodeArray.prefectureKeyValue.sorted{ $0.value < $1.value }
+        for (key, _) in sortedPrefectureArray {
             list.append(key)
             
         }
